@@ -1,0 +1,68 @@
+/* 공통 */
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  margin: -1px;
+}
+#skipNav {
+  position: absolute;
+}
+#skipNav a {
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  color: #fff;
+  transform: translateY(-100%);
+}
+#skipNav a:active,
+#skipNav a:focus {
+  transform: translateY(0);
+}
+/* 배경아이콘 처리 */
+.gnb .nav-item [class*="ico-"]::before,
+.gnb .nav-item [class*="ico-"]::after,
+.header .group-search [class*="btn-"]::before,
+.header .util-area [class*="btn-"]::before,
+.sc-login .link-login::before,
+.sc-news .group-issue .issue-area .btn-all::after,
+.sc-news .group-issue .issue-area .media::before,
+.sc-news .group-control .radio-area [class*="btn-"]::before,
+.group-control .control-area [class*="btn-"]::before,
+.sc-recipe .group-feed .feed-area .thumb-box .play:before,
+.sc-weather .group-header .compare::before,
+.sc-finance .group-header [class*="btn-"]::before,
+.sc-finance .group-finance .dailyboard-area .ico-status,
+.sc-finance .group-finance .dailyboard-area .stock-list .stock-gap [class*="ico-"],
+.sc-widget .widget-area .widget-papago::before,
+.sc-widget .widget-area .papago-box .papago-text,
+.sc-widget .widget-area .widget-engdict .link-search:before,
+.sc-widget .bottom .widget-clip .ico-clip,
+.sc-widget .link-more::after,
+.sc-widget .link-more .more-text::before,
+.col-right .whale-area i,
+.footer .notice-area .link-more::after,
+.btn-settingbox [class*="btn-"]::before {
+  background-image: url(../images/sp-bg.png);
+  background-repeat: no-repeat;
+  background-size: 434px;
+}
+.sc-shopping .commerce-area .cart-wrap [class*="ico-"]::before,
+.sc-shopping .commerce-area .cart-wrap [class*="ico-"]::after {
+  background-image: url(../images/sp_main.png);
+  background-repeat: no-repeat;
+  background-size: 134px;
+}
+.sc-weather .daily-area .weather-box .weather-img::before,
+.sc-weather .daily-area .tempboard-list .ico-tempboard::before {
+  background-image: url(../images/sp_weather.png);
+  background-repeat: no-repeat;
+  background-size: 641px;
+}
